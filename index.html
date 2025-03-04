@@ -27,7 +27,8 @@
     name: 'Jonas';
     age: '99';
 
-} -->
+} du slash gale komentaro apsaugos kad JavaScript nebandytų vykdyt šių eilučių
+// -->
 
 <!DOCTYPE html>
 
@@ -36,6 +37,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -51,6 +60,234 @@
           <a href="mailto:hege@example.com">hege@example.com</a>
         </p>
       </footer>
+      The <abbr title="Batltijos technologijų institutas">BIT</abbr> was founded
+      in 1948.
+
+      <address>
+        Visit us at:<br />
+        Example.com<br />
+        Box 564, Disneyland<br />
+        USA
+      </address>
+
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's
+        leading conservation organization, WWF works in 100 countries and is
+        supported by 1.2 million members in the United States and close to 5
+        million globally.
+      </blockquote>
+
+      <p>
+        To force<br />
+        line breaks<br />
+        in a text,<br />
+        use the br<br />
+        element.
+      </p>
+      <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+      <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+      </dl>
+      <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+      <details>
+        <summary>Epcot Center</summary>
+        <p>
+          Epcot is a theme park at Walt Disney World Resort featuring exciting
+          attractions, international pavilions, award-winning fireworks and
+          seasonal special events.
+        </p>
+      </details>
+      <dialog open>This is an open dialog window</dialog>
+
+      <p>You <em>have</em> to hurry up!</p>
+
+      <figure>
+        <img src="pic_trulli.jpg" alt="Trulli" />
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+      </figure>
+
+      <hgroup>
+        <h2>Norway</h2>
+        <p>The land with the midnight sun.</p>
+      </hgroup>
+
+      <hr />
+
+      <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+      <form action="/action_page.php">
+        <fieldset>
+          <legend>Asmens duomenys:</legend>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" /><br /><br />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+      <menu>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </menu>
+
+      <label for="disk_c">Disk usage C:</label>
+      <meter id="disk_c" value="4" min="0" max="10">2 out of 10</meter><br />
+
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+      </select>
+
+      <label for="cars">Choose a car:</label>
+      <select id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+
+      <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both       spaces and
+               line breaks
+        </pre
+      >
+
+      <label for="file">Downloading progress:</label>
+      <progress id="file" value="32" max="100">32%</progress>
+
+      <p>
+        WWF's goal is to:
+        <q>Build a future where people live in harmony with nature.</q>
+        We hope they succeed.
+      </p>
+
+      <ruby> 漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp> </ruby>
+
+      <p><s>Only 50 tickets left!</s></p>
+      <p>SOLD OUT!</p>
+
+      <p>Message from my computer:</p>
+      <p>
+        <samp>File not found.<br />Press F1 to continue</samp>
+      </p>
+
+      <search>
+        <form>
+          <input name="fsrch" id="fsrch" placeholder="Search for beer shop" />
+        </form>
+      </search>
+      <br />
+      <p>This is some normal text.</p>
+      <p><small>This is some smaller text.</small></p>
+
+      <audio controls>
+        <source src="horse.ogg" type="audio/ogg" />
+        <source src="horse.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <p>My mother has <span style="color: blue">blue</span> eyes.</p>
+
+      <p>This text contains <sub>subscript</sub> text.</p>
+
+      <p>This text contains <sup>superscript</sup> text.</p>
+
+      <svg width="100" height="100">
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke="khaki"
+          stroke-width="4"
+          fill="aqua"
+        />
+      </svg>
+
+      <table>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+      </table>
+
+      <label for="w3review">Review of W3Schools:</label>
+      <textarea id="w3review" name="w3review" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea
+      >
+
+      <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+      <p>
+        I have a date on
+        <time datetime="2025-02-14 20:00">Valentines day</time>.
+      </p>
+
+      <video width="320" height="140" controls>
+        <source src="forrest_gump.mp4" type="video/mp4" />
+        <source src="forrest_gump.ogg" type="video/ogg" />
+        <track
+          src="fgsubtitles_en.vtt"
+          kind="subtitles"
+          srclang="en"
+          label="English"
+        />
+        <track
+          src="fgsubtitles_no.vtt"
+          kind="subtitles"
+          srclang="no"
+          label="Norwegian"
+        />
+      </video>
+
+      <p>This is some <u>mispeled</u> text.</p>
+
+      <p>
+        The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where
+        <var>b</var> is the base, and <var>h</var> is the vertical height.
+      </p>
+
+      <p>
+        To learn AJAX, you must be familiar with the XML<wbr />Http<wbr />Request
+        Object.
+      </p>
     </div>
   </body>
 </html>
