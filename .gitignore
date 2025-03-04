@@ -1,0 +1,7 @@
+*.json
+*.cmd
+*.ps1
+*.js
+node_modules
+.DS_Store
+.vscode
